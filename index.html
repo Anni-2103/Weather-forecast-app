@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     
+    </style>
+</head>
+<body class="bg-blue-100 font-sans">
+    <div class="container mx-auto p-4">
+        <!-- Header -->
+        <h1 class="text-3xl font-bold text-center mb-6 text-white bg-blue-600 py-4 rounded">Weather Dashboard</h1>
+
+        <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Search Section -->
+            <div class="bg-white p-6 rounded shadow lg:w-1/3">
+                <h2 class="text-xl font-bold mb-4">Enter a City Name</h2>
+                <input id="city-input" type="text" placeholder="E.g., New York, London, Tokyo" 
+                    class="p-2 border border-gray-300 rounded w-full mb-4">
+                <button id="search-btn" 
+                    class="p-2 bg-blue-500 text-white rounded w-full hover:bg-blue-600 mb-2">Search</button>
+                <div class="text-center text-gray-500 mb-2">or</div>
+                <button id="location-btn" 
+                    class="p-2 bg-gray-500 text-white rounded w-full hover:bg-gray-600">Use Current Location</button>
+            </div>
+
+            <!--  Current Weather and Extended Forecast -->
+            <div class="flex flex-col gap-6 lg:w-2/3">
+                <!-- Current Weather Section -->
+                <div id="current-weather" class="bg-blue-200 p-6 rounded shadow">
+                    <h2 class="text-xl font-bold mb-4">Current Weather</h2>
+                    <div id="current-weather-data" class="flex items-center gap-4">
+                        <!-- Dynamic data will be injected here -->
+                    </div>
+                </div>
+
+                <!-- Extended Forecast Section -->
+                <div id="extended-forecast" class="bg-white p-6 rounded shadow">
+                    <h2 class="text-xl font-bold mb-4">5-Day Forecast</h2>
+                    <div id="forecast-data" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                        <!-- Dynamic data will be injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="config.js"></script>
+   <script src="script.js"></script>
+   
+ 
+
+        
+    
+    
+    
+</body>
+</html>
